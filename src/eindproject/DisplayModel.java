@@ -11,6 +11,7 @@ import java.util.Observable;
  * @author Brave
  */
 public class DisplayModel extends Observable {
+    private Controller controller;
     private int calculationValue;
     /*
     In deze class zit alvast een voorproefje van een lambda. Deze
@@ -45,22 +46,21 @@ public class DisplayModel extends Observable {
     }
    //ZOEK UIT HOE JE DOOR VERWIJST NAAR DE LIJST MOVIES VAN CONTROLLER
     public boolean DataExists(MovieData movie){
-        boolean bool = false;
-        for(int i =0; i<Display.movies.size();i++){
-            if(movie.equals(movies.get(i))){
-                bool = true;
+        for(int i =0; i<controller.GetData().size();i++){
+            if(movie.equals(controller.GetData().get(i))){
+                return true;
             }
         }
-        return bool;
+        return false;
     }
     
     public void addMovie(MovieData movie){
-        movies.add(movie);
+        controller.GetData().add(movie);
     }
     
     public void removeMovie(MovieData movie){
-        if(movies.contains(movie)){
-            movies.remove(movie);   
+        if(controller.GetData().contains(movie)){
+            controller.GetData().remove(movie);   
         }
     }
 }
