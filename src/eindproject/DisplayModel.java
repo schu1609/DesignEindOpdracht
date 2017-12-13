@@ -43,18 +43,11 @@ public class DisplayModel extends Observable {
     public interface MathOperation {
         int operation(int a, int b);
     }
-    
-   private Controller controller = new Controller();
-    private List <MovieData> moviedata;
-    
-    public void GetData(){
-        moviedata = controller.GetData();
-    }
-    
+   //ZOEK UIT HOE JE DOOR VERWIJST NAAR DE LIJST MOVIES VAN CONTROLLER
     public boolean DataExists(MovieData movie){
         boolean bool = false;
-        for(int i =0; i<moviedata.size();i++){
-            if(movie.equals(moviedata.get(i))){
+        for(int i =0; i<Display.movies.size();i++){
+            if(movie.equals(movies.get(i))){
                 bool = true;
             }
         }
@@ -62,12 +55,12 @@ public class DisplayModel extends Observable {
     }
     
     public void addMovie(MovieData movie){
-        moviedata.add(movie);
+        movies.add(movie);
     }
     
     public void removeMovie(MovieData movie){
-        if(moviedata.contains(movie)){
-            moviedata.remove(movie);   
+        if(movies.contains(movie)){
+            movies.remove(movie);   
         }
     }
 }
