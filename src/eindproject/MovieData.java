@@ -5,20 +5,23 @@
  */
 package eindproject;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
- * @author Thefellowes
+ * @author Brave
  */
 public class MovieData {
-    String name;
-    int year;
+    String naam;
     String origin;
-    double budget;
+    int budget;
+    String date;
     
-    MovieData(String name, int year, String origin, double budget){
-        this.name = name;
-        this.year = year;
+    public MovieData(String naam,String origin,int budget,String date){
+        this.naam = naam;
         this.origin = origin;
         this.budget = budget;
+        this.date = date;
     }
 }

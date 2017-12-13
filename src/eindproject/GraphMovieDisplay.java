@@ -5,11 +5,13 @@
  */
 package eindproject;
 
+import javax.swing.AbstractAction;
+
 /**
  *
  * @author Brave
  */
-public class GraphMovieDisplay extends javax.swing.JFrame {
+public class GraphMovieDisplay extends Display {
 
     /**
      * Creates new form GraphMovieDisplay
@@ -76,6 +78,31 @@ public class GraphMovieDisplay extends javax.swing.JFrame {
                 new GraphMovieDisplay().setVisible(true);
             }
         });
+    }
+
+    @Override
+    public void GetData() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int getFirstNumber() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int getSecondNumber() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setResult(int result) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void setAddAction(AbstractAction action) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
