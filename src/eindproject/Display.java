@@ -17,31 +17,4 @@ public abstract class Display extends javax.swing.JFrame {
     public abstract int getSecondNumber();
     public abstract void setResult(int result);
     public abstract void setAddAction(AbstractAction action);
-    
-    private Controller controller = new Controller();
-    private List <MovieData> moviedata;
-    
-    public void GetData(){
-        moviedata = controller.GetData();
-    }
-    
-    public boolean DataExists(MovieData movie){
-        boolean bool = false;
-        for(int i =0; i<moviedata.size();i++){
-            if(movie.equals(moviedata.get(i))){
-                bool = true;
-            }
-        }
-        return bool;
-    }
-    
-    public void addMovie(MovieData movie){
-        moviedata.add(movie);
-    }
-    
-    public void removeMovie(MovieData movie){
-        if(moviedata.contains(movie)){
-            moviedata.remove(movie);   
-        }
-    }
 }

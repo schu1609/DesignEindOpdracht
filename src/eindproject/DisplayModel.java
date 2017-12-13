@@ -43,4 +43,31 @@ public class DisplayModel extends Observable {
     public interface MathOperation {
         int operation(int a, int b);
     }
+    
+   private Controller controller = new Controller();
+    private List <MovieData> moviedata;
+    
+    public void GetData(){
+        moviedata = controller.GetData();
+    }
+    
+    public boolean DataExists(MovieData movie){
+        boolean bool = false;
+        for(int i =0; i<moviedata.size();i++){
+            if(movie.equals(moviedata.get(i))){
+                bool = true;
+            }
+        }
+        return bool;
+    }
+    
+    public void addMovie(MovieData movie){
+        moviedata.add(movie);
+    }
+    
+    public void removeMovie(MovieData movie){
+        if(moviedata.contains(movie)){
+            moviedata.remove(movie);   
+        }
+    }
 }
