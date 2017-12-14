@@ -12,17 +12,13 @@ import java.util.Observable;
  */
 public class DisplayModel extends Observable {
     private int calculationValue;
-    /*
-    In deze class zit alvast een voorproefje van een lambda. Deze
-    lambda maakt het mogelijk om op simpele wijze het programma
-    zo te veranderen dat het een andere wiskundige operatie
-    gaat doen. Dit werkt via de interface MathOperation.
-    */
+    private final Controller controller;
     
     MathOperation operation;
     
-    public DisplayModel(MathOperation operation) {
+    public DisplayModel(MathOperation operation, Controller controller) {
         this.operation = operation;
+        this.controller = controller;
     }
     
     public void addTwoNumbers(int a, int b) {

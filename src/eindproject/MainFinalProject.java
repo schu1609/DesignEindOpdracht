@@ -20,7 +20,7 @@ public class MainFinalProject {
         //Deze regel lijkt anders dan tijdens de les, dat klopt. Er zit
         //een voorproefje van een lambda functie in. Kijk in de class
         //CalcModel voor meer info.
-        DisplayModel displayModel = new DisplayModel((int a, int b) -> a + b);
+        DisplayModel displayModel = new DisplayModel((int a, int b) -> a + b ,controller);
         
         //Kies hier een van de twee regels code om de andere
         //functionaliteit te activeren
