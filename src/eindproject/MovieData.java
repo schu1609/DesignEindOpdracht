@@ -15,6 +15,7 @@ public class MovieData {
     int budget;
     String date;
     
+    //wij hebben hier het Design Pattern Constructor Chaining gebruikt, omdat: voor sommige films die nog uit moeten komen weten mensen niet alle data er over.
     public MovieData(String naam,String origin,int budget,String date){
         this.naam = naam;
         this.origin = origin;
@@ -42,6 +43,7 @@ public class MovieData {
     public String getName(){
         return naam;
     }
+    //getName = () -> naam;
     public String getOrigin(){
         return origin;
     }

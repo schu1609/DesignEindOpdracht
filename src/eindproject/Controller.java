@@ -16,6 +16,7 @@ import java.util.Observer;
  *
  * @author Brave
  */
+
 class Controller implements Observer {
     private DisplayModel displayModel;
     private Display displayView;
