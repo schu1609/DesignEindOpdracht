@@ -21,6 +21,17 @@ class Controller implements Observer {
     private Display displayView;
     
     private List <MovieData> movies;
+   
+    public Controller(DisplayModel displayModel, Display displayView) {
+        this.displayModel = displayModel;
+        this.displayView = displayView;
+        
+        this.displayView.GetData();
+        
+        this.displayModel.addObserver(this);
+        
+        displayView.setVisible(true);
+    }
     
     public void addStartMovie(){
         movies.add(new MovieData("Norm Of The North","North Pole",18000000,"January 5th 2016"));
@@ -34,18 +45,6 @@ class Controller implements Observer {
     }
     public List<MovieData> getData(){
         return movies;
-    }
-    
-    
-    public Controller(DisplayModel displayModel, Display displayView) {
-        this.displayModel = displayModel;
-        this.displayView = displayView;
-        
-        this.displayView.GetData();
-        
-        this.displayModel.addObserver(this);
-        
-        displayView.setVisible(true);
     }
 
     @Override
