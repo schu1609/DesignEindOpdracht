@@ -15,10 +15,10 @@ import javax.swing.AbstractAction;
 //Wij hebben hier gebruik gemaakt van het Design pattern Abstractie, omdat: wij hierdoor data kunnen gebruiken in een Jframe.
 public abstract class Display extends javax.swing.JFrame {
     public abstract void GetData();
-    public abstract String getOriginMovie();
-    public abstract void setAddAction(AbstractAction action);   
+    public abstract String getOriginMovie(); 
     public abstract String getMovieName();
     public abstract int getYearMovie();
     public abstract int getBudgetMovie();
-    
+    public abstract void setAddAction(AbstractAction action);  
+    public abstract void setToString(String result);
 }

@@ -20,10 +20,12 @@ public class MainFinalProject {
         DisplayModel displayModel = new DisplayModel(controller);
 
         Display display1 = new AddMovieDisplay();
-        //Display display2 = new ListMovieDisplay();
-        //Display display3 = new GraphMovieDisplay();
+        Display display2 = new ListMovieDisplay();
+        Display display3 = new GraphMovieDisplay();
         //CalcView calcView = new CalcButtonsView();
         
         controller = new Controller(displayModel, display1);
+        controller = new Controller(displayModel, display2);
+        controller = new Controller(displayModel, display3);
     }
 }

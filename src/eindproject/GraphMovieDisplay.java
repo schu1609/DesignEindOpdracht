@@ -32,19 +32,20 @@ public class GraphMovieDisplay extends Display {
         piePlot1 = new org.jfree.chart.plot.PiePlot();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Movie Origin Chart");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 520, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 340, Short.MAX_VALUE)
         );
 
-        pack();
+        setBounds(1150, 150, 536, 379);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -84,12 +85,12 @@ public class GraphMovieDisplay extends Display {
 
     @Override
     public void GetData() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
     }
 
     @Override
     public void setAddAction(AbstractAction action) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+
     }
     
     @Override
@@ -112,4 +113,9 @@ public class GraphMovieDisplay extends Display {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private org.jfree.chart.plot.PiePlot piePlot1;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void setToString(String result) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

@@ -54,7 +54,7 @@ class Controller implements Observer {
 //FIND USE FOR THIS.
     @Override
     public void update(Observable o, Object arg) {
-     //   displayView.setResult(1);
+        display.setToString(displayModel.getToString());
     }
     
     class AddAction extends AbstractAction {
@@ -66,7 +66,7 @@ class Controller implements Observer {
             int YearMovie = display.getYearMovie();
             int BudgetMovie = display.getBudgetMovie();
             
-            movies.add(new MovieData(MovieName,OriginMovie,BudgetMovie,Integer.toString(YearMovie)));
+            displayModel.addMovie(new MovieData(MovieName,OriginMovie,BudgetMovie,Integer.toString(YearMovie)));
         }
         
     }

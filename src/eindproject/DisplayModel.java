@@ -9,11 +9,34 @@ import java.util.List;
 import java.util.Observable;
 
 public class DisplayModel extends Observable {
+    private String ToString;
     private Controller controller;
     List <String> names;
     List <String> origins;
     List <String> budgets;
     List <String> dates;
+    
+    DisplayOperation operation;
+    
+    public interface DisplayOperation {
+        String operation(String a, String b, String c, String d);
+    }
+    
+    private String operate(String a, String b, String c, String d, DisplayOperation displayOperation) {
+      return displayOperation.operation(a, b, c, d);
+    }
+    
+    public String getToString() {
+        return ToString;
+    }
+    
+    public void addTwoNumbers(String a, String b, String c, String d) {
+        ToString = operate(a, b, c, d, operation);
+        
+        setChanged();
+        notifyObservers();
+    }
+    
     
     public DisplayModel(Controller controller) {
         this.controller = controller;
