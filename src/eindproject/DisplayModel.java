@@ -11,7 +11,6 @@ import java.util.Observable;
  * @author Brave
  */
 public class DisplayModel extends Observable {
-    private Controller controller;
     private int calculationValue;
     /*
     In deze class zit alvast een voorproefje van een lambda. Deze
@@ -44,7 +43,7 @@ public class DisplayModel extends Observable {
     public interface MathOperation {
         int operation(int a, int b);
     }
-   
+   //DOORLINKEN NAAR CONTROLLER IN DE MAIN!
     public boolean DataExists(MovieData movie){
         for(int i =0; i<controller.GetData().size();i++){
             if(movie.equals(controller.GetData().get(i))){
@@ -63,4 +62,5 @@ public class DisplayModel extends Observable {
             controller.GetData().remove(movie);   
         }
     }
+    //
 }

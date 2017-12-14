@@ -20,7 +20,7 @@ class Controller implements Observer {
     private DisplayModel displayModel;
     private Display displayView;
     
-    private List <MovieData> movies = new ArrayList<MovieData>();
+    private List <MovieData> movies;
     
     public void addStartMovie(){
         movies.add(new MovieData("Norm Of The North","North Pole",18000000,"January 5th 2016"));
