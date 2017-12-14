@@ -15,8 +15,7 @@ public class DisplayModel extends Observable {
     private final Controller controller;
     MathOperation operation;
     
-    public DisplayModel(MathOperation operation, Controller controller) {
-        this.operation = operation;
+    public DisplayModel( Controller controller) {      
         this.controller = controller;
     }
     
@@ -40,7 +39,7 @@ public class DisplayModel extends Observable {
     }
     
     public boolean DataExists(MovieData movie){
-        for(int i =0; i<controller.GetData().size();i++){
+        for(int i =0; i<controller.GetData().size(); i++){
             if(movie.equals(controller.GetData().get(i))){
                 return true;
             }
