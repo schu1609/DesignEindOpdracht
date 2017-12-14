@@ -111,7 +111,7 @@ public class ListMovieDisplay extends Display {
 
     @Override
     public void GetData() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
 
     @Override
