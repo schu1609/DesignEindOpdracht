@@ -5,11 +5,8 @@
  */
 package eindproject;
 
+import java.util.List;
 import java.util.Observable;
-/**
- *
- * @author Brave
- */
 public class DisplayModel extends Observable {
     private final Controller controller;
     
@@ -17,9 +14,9 @@ public class DisplayModel extends Observable {
         this.controller = controller;
     }
     
-    public boolean DataExists(MovieData movie){
-        for(int i =0; i<controller.GetData().size(); i++){
-            if(movie.equals(controller.GetData().get(i))){
+    public boolean dataExists(MovieData movie){
+        for(int i =0; i<controller.getData().size(); i++){
+            if(movie.equals(controller.getData().get(i))){
                 return true;
             }
         }
@@ -27,13 +24,12 @@ public class DisplayModel extends Observable {
     }
     
     public void addMovie(MovieData movie){
-        controller.GetData().add(movie);
+        controller.getData().add(movie);
     }
     
     public void removeMovie(MovieData movie){
-        if(controller.GetData().contains(movie)){
-            controller.GetData().remove(movie);   
+        if(controller.getData().contains(movie)){
+            controller.getData().remove(movie);   
         }
     }
-    //
 }

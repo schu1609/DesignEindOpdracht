@@ -32,7 +32,7 @@ class Controller implements Observer {
         movies.add(new MovieData("Kameleon","Netherlands",7500000,"June 25th 2003"));
         movies.add(new MovieData("Sinterklaas en het gouden hoefijzer","Netherlands",96882,"October 11th 2017"));
     }
-    public List<MovieData> GetData(){
+    public List<MovieData> getData(){
         return movies;
     }
     
@@ -50,6 +50,6 @@ class Controller implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        displayView.setResult(displayModel.getCalculationValue());
+        displayView.setResult(1);
     }
 }
