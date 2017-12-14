@@ -22,6 +22,23 @@ public class MovieData {
         this.date = date;
     }
     
+    public MovieData(String naam,String origin,String date){
+        this.naam = naam;
+        this.origin = origin;      
+        this.date = date;
+    }
+    
+    public MovieData(String naam,int budget,String date){
+        this.naam = naam;     
+        this.budget = budget;
+        this.date = date;
+    }
+    
+    public MovieData(String naam,String date){
+        this.naam = naam;
+        this.date = date;
+    }
+    
     public String getName(){
         return naam;
     }
