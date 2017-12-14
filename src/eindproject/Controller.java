@@ -46,7 +46,7 @@ class Controller implements Observer {
     public List<MovieData> getData(){
         return movies;
     }
-
+//FIND USE FOR THIS.
     @Override
     public void update(Observable o, Object arg) {
         displayView.setResult(1);
