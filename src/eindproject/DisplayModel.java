@@ -13,7 +13,6 @@ import java.util.Observable;
 public class DisplayModel extends Observable {
     private int calculationValue;
     private final Controller controller;
-    
     MathOperation operation;
     
     public DisplayModel(MathOperation operation, Controller controller) {
@@ -39,7 +38,7 @@ public class DisplayModel extends Observable {
     public interface MathOperation {
         int operation(int a, int b);
     }
-   //DOORLINKEN NAAR CONTROLLER IN DE MAIN!
+    
     public boolean DataExists(MovieData movie){
         for(int i =0; i<controller.GetData().size();i++){
             if(movie.equals(controller.GetData().get(i))){
