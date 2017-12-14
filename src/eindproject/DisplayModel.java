@@ -44,7 +44,7 @@ public class DisplayModel extends Observable {
     public interface MathOperation {
         int operation(int a, int b);
     }
-   //ZOEK UIT HOE JE DOOR VERWIJST NAAR DE LIJST MOVIES VAN CONTROLLER
+   
     public boolean DataExists(MovieData movie){
         for(int i =0; i<controller.GetData().size();i++){
             if(movie.equals(controller.GetData().get(i))){

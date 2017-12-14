@@ -20,9 +20,6 @@ class Controller implements Observer {
     private DisplayModel displayModel;
     private Display displayView;
     
-    private Display[] display;
-    private MovieData[] movieData;
-    
     private List <MovieData> movies = new ArrayList<MovieData>();
     
     public void addStartMovie(){
@@ -49,10 +46,6 @@ class Controller implements Observer {
         this.displayModel.addObserver(this);
         
         displayView.setVisible(true);
-    }
-    
-     public void GetData(boolean DataRecieved) {
-
     }
 
     @Override
