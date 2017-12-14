@@ -7,6 +7,7 @@ package eindproject;
 
 import java.util.List;
 import java.util.Observable;
+
 public class DisplayModel extends Observable {
     private Controller controller;
     List <String> names;
