@@ -169,7 +169,7 @@ public class AddMovieDisplay extends Display {
 
     @Override
     public void GetData() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.action
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.action
     }
 
     @Override

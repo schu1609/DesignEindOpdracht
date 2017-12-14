@@ -33,6 +33,8 @@ class Controller implements Observer {
         
         this.displayModel.addObserver(this);
         
+        displayView.setAddAction(new AddAction());
+        
         displayView.setVisible(true);
     }
     

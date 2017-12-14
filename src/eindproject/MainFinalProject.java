@@ -24,9 +24,11 @@ public class MainFinalProject {
         
         //Kies hier een van de twee regels code om de andere
         //functionaliteit te activeren
-        Display display = new ListMovieDisplay();
+        Display display1 = new AddMovieDisplay();
+        //Display display2 = new ListMovieDisplay();
+        //Display display3 = new GraphMovieDisplay();
         //CalcView calcView = new CalcButtonsView();
         
-        controller = new Controller(displayModel, display);
+        controller = new Controller(displayModel, display1);
     }
 }
