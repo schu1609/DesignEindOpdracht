@@ -11,32 +11,10 @@ import java.util.Observable;
  * @author Brave
  */
 public class DisplayModel extends Observable {
-    private int calculationValue;
     private final Controller controller;
-    MathOperation operation;
     
-    public DisplayModel(MathOperation operation, Controller controller) {
-        this.operation = operation;
+    public DisplayModel(Controller controller) {
         this.controller = controller;
-    }
-    
-    public void addTwoNumbers(int a, int b) {
-        calculationValue = operate(a, b, operation);
-        
-        setChanged();
-        notifyObservers();
-    }
-    
-    public int getCalculationValue() {
-        return calculationValue;
-    }
-    
-    private int operate(int a, int b, MathOperation mathOperation) {
-      return mathOperation.operation(a, b);
-   }
-    
-    public interface MathOperation {
-        int operation(int a, int b);
     }
     
     public boolean DataExists(MovieData movie){
