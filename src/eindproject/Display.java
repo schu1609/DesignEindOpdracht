@@ -13,8 +13,11 @@ import javax.swing.AbstractAction;
  */
 public abstract class Display extends javax.swing.JFrame {
     public abstract void GetData();
-    public abstract int getFirstNumber();
-    public abstract int getSecondNumber();
-    public abstract void setResult(int result);
+    public abstract String getOriginMovie();
     public abstract void setAddAction(AbstractAction action);
+    interface Optional{
+            public abstract String getMovieName();
+            public abstract int getYearMovie();
+            public abstract int getBudgetMovie();
+    }
 }

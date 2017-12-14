@@ -51,6 +51,6 @@ class Controller implements Observer {
 //FIND USE FOR THIS.
     @Override
     public void update(Observable o, Object arg) {
-        displayView.setResult(1);
+     //   displayView.setResult(1);
     }
 }

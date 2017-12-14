@@ -14,6 +14,8 @@ import javax.swing.AbstractAction;
  */
 public class AddMovieDisplay extends Display {
 
+    private Object movies;
+
     /**
      * Creates new form AddMovieDisplay
      */
@@ -72,6 +74,11 @@ public class AddMovieDisplay extends Display {
 
         jButton1.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         jButton1.setText("Add Movie");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
         jLabel6.setText("     Warning: Film bestaat al!");
@@ -135,6 +142,10 @@ public class AddMovieDisplay extends Display {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -172,27 +183,30 @@ public class AddMovieDisplay extends Display {
 
     @Override
     public void GetData() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public int getFirstNumber() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public int getSecondNumber() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setResult(int result) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.action
     }
 
     @Override
     public void setAddAction(AbstractAction action) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    @Override
+    public String getOriginMovie() {
+        return jTextField3.getText();
+    }
+    
+    public String getMovieName() {
+        return jTextField1.getText();
+    }
+
+    public int getYearMovie() {
+        return Integer.parseInt(jTextField2.getText());
+    }
+   
+
+    public int getBudgetMovie() {
+        return Integer.parseInt(jTextField4.getText());
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
