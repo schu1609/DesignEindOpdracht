@@ -70,6 +70,7 @@ public class AddMovieDisplay extends Display {
         jLabel5.setText("Het budget voor de film:");
         jLabel5.setToolTipText("");
 
+        jButton1.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         jButton1.setText("Add Movie");
 
         jLabel6.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
@@ -126,7 +127,7 @@ public class AddMovieDisplay extends Display {
                     .addComponent(jLabel5))
                 .addGap(18, 18, 18)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 31, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addContainerGap())
         );
