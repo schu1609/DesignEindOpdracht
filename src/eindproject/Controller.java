@@ -16,6 +16,7 @@ import java.util.Observer;
  *
  * @author Brave
  */
+
 class Controller implements Observer {
     private DisplayModel displayModel;
     private Display displayView;
@@ -47,6 +48,7 @@ class Controller implements Observer {
     public List<MovieData> getData(){
         return movies;
     }
+    //getData = (MovieData) -> movies;
     
 //FIND USE FOR THIS.
     @Override

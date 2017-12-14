@@ -28,28 +28,28 @@ public class DisplayModel extends Observable {
         return false;
     }
     
-    public List <String> getNames(){
+    public List <String> getNameList(){
         for(int i =0; i<controller.getData().size(); i++){
                 names.add(controller.getData().get(i).getName());
             }
         return names;
     }
     
-    public List <String> getOrigins(){
+    public List <String> getOriginList(){
         for(int i =0; i<controller.getData().size(); i++){
                 origins.add(controller.getData().get(i).getName());
             }
         return origins;
     }
     
-    public List <String> getBudgets(){
+    public List <String> getBudgetList(){
         for(int i =0; i<controller.getData().size(); i++){
                 budgets.add(controller.getData().get(i).getName());
             }
         return budgets;
     }
     
-    public List <String> getDates(){
+    public List <String> getDateList(){
         for(int i =0; i<controller.getData().size(); i++){
                 dates.add(controller.getData().get(i).getName());
             }
@@ -59,6 +59,7 @@ public class DisplayModel extends Observable {
     public void addMovie(MovieData movie){
         controller.getData().add(movie);
     }
+    //addMovie = (MovieData movie) -> controller.getData().add(movie);
     
     public void removeMovie(MovieData movie){
         if(controller.getData().contains(movie)){
