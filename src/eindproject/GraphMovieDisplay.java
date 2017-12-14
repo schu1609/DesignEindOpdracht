@@ -29,6 +29,8 @@ public class GraphMovieDisplay extends Display {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        piePlot1 = new org.jfree.chart.plot.PiePlot();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -108,5 +110,6 @@ public class GraphMovieDisplay extends Display {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private org.jfree.chart.plot.PiePlot piePlot1;
     // End of variables declaration//GEN-END:variables
 }
