@@ -8,7 +8,11 @@ package eindproject;
 import java.util.List;
 import java.util.Observable;
 public class DisplayModel extends Observable {
-    private final Controller controller;
+    private Controller controller;
+    List <String> names;
+    List <String> origins;
+    List <String> budgets;
+    List <String> dates;
     
     public DisplayModel(Controller controller) {
         this.controller = controller;
@@ -21,6 +25,34 @@ public class DisplayModel extends Observable {
             }
         }
         return false;
+    }
+    
+    public List <String> getNames(){
+        for(int i =0; i<controller.getData().size(); i++){
+                names.add(controller.getData().get(i).getName());
+            }
+        return names;
+    }
+    
+    public List <String> getOrigins(){
+        for(int i =0; i<controller.getData().size(); i++){
+                origins.add(controller.getData().get(i).getName());
+            }
+        return origins;
+    }
+    
+    public List <String> getBudgets(){
+        for(int i =0; i<controller.getData().size(); i++){
+                budgets.add(controller.getData().get(i).getName());
+            }
+        return budgets;
+    }
+    
+    public List <String> getDates(){
+        for(int i =0; i<controller.getData().size(); i++){
+                dates.add(controller.getData().get(i).getName());
+            }
+        return dates;
     }
     
     public void addMovie(MovieData movie){

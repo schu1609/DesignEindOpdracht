@@ -21,4 +21,17 @@ public class MovieData {
         this.budget = budget;
         this.date = date;
     }
+    
+    public String getName(){
+        return naam;
+    }
+    public String getOrigin(){
+        return origin;
+    }
+    public String getBudget(){
+        return Integer.toString(budget);
+    }
+    public String getDate(){
+        return date;
+    }
 }
