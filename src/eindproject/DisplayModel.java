@@ -18,7 +18,7 @@ public class DisplayModel extends Observable {
     }
     
     public boolean DataExists(MovieData movie){
-        for(int i =0; i<controller.GetData().size();i++){
+        for(int i =0; i<controller.GetData().size(); i++){
             if(movie.equals(controller.GetData().get(i))){
                 return true;
             }
