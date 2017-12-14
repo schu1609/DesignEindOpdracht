@@ -19,15 +19,16 @@ import java.util.Observer;
 
 class Controller implements Observer {
     private DisplayModel displayModel;
-    private Display displayView;
+    private Display display;
+    private Display.Optional optional;
     
     private List <MovieData> movies;
    
     public Controller(DisplayModel displayModel, Display displayView) {
         this.displayModel = displayModel;
-        this.displayView = displayView;
+        this.display = displayView;
         
-        this.displayView.GetData();
+        this.display.GetData();
         
         this.displayModel.addObserver(this);
         
@@ -53,5 +54,19 @@ class Controller implements Observer {
     @Override
     public void update(Observable o, Object arg) {
      //   displayView.setResult(1);
+    }
+    
+    class AddAction extends AbstractAction {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            String OriginMovie = display.getOriginMovie();
+            String MovieName = optional.getMovieName();
+            int YearMovie = optional.getYearMovie();
+            int BudgetMovie = optional.getBudgetMovie();
+            
+            movies.add(new MovieData(MovieName,OriginMovie,BudgetMovie,Integer.toString(YearMovie)));
+        }
+        
     }
 }
