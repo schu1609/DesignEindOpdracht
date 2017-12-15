@@ -18,17 +18,17 @@ import java.util.Observer;
  */
 
 class Controller implements Observer {
-    private Model displayModel;
+    private Model model;
     private AddMovieDisplay addMovieDisplay;
     private ListMovieDisplay listMovieDisplay;
     private GraphMovieDisplay graphMovieDisplay;
    
-    public Controller(Model displayModel, AddMovieDisplay addMovieDisplay, ListMovieDisplay listMovieDisplay, GraphMovieDisplay graphMovieDisplay) {
-        this.displayModel = displayModel;
+    public Controller(Model model, AddMovieDisplay addMovieDisplay, ListMovieDisplay listMovieDisplay, GraphMovieDisplay graphMovieDisplay) {
+        this.model = model;
         this.listMovieDisplay = listMovieDisplay;        
         this.addMovieDisplay = addMovieDisplay;
         this.graphMovieDisplay = graphMovieDisplay;
-        this.displayModel.addObserver(this);
+        this.model.addObserver(this);
         this.listMovieDisplay.setVisible(true);
         this.addMovieDisplay.setVisible(true);
         this.graphMovieDisplay.setVisible(true);
@@ -37,9 +37,10 @@ class Controller implements Observer {
         this.listMovieDisplay.setRemove(new RemoveAction());
     }
     
+    //Observable pattern.
     @Override
     public void update(Observable o, Object arg) {
-     listMovieDisplay.updateList(displayModel.getMovies());
+     listMovieDisplay.updateList(model.getMovies());
      addMovieDisplay.clear();
      System.out.println("Done");
     }
@@ -55,7 +56,7 @@ class Controller implements Observer {
             String Update = MovieName + " Added Movie";
             
             MovieData movie = new MovieData(MovieName, MovieYear, MovieOrigin, MovieBudget);
-            displayModel.Add(movie);
+            model.Add(movie);
             addMovieDisplay.update(Update);
         }
     }
@@ -66,7 +67,7 @@ class Controller implements Observer {
         public void actionPerformed(ActionEvent e) {
             String MovieName = listMovieDisplay.getSelectedMovie();
             if ( MovieName != null ){
-                displayModel.Remove(MovieName);
+                model.Remove(MovieName);
             }
         }
     }

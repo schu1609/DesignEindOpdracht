@@ -25,7 +25,8 @@ public class MovieData {
     
     public MovieData(String movieName,int movieYear ,String movieOrigin ){
         this.movieName = movieName;
-        this.movieYear = movieYear;      
+        this.movieYear = movieYear;
+        this.movieBudget = -1;
         this.movieOrigin = movieOrigin;
     }
     
@@ -33,11 +34,14 @@ public class MovieData {
         this.movieName = movieName;     
         this.movieYear = movieYear;
         this.movieBudget = movieBudget;
+        this.movieOrigin = "Unknown";
     }
     
     public MovieData(String movieName,int movieYear ){
         this.movieName = movieName;
         this.movieYear = movieYear;
+        this.movieBudget = -1;
+        this.movieOrigin = "Unknown";
     }
     
     public String getName(){

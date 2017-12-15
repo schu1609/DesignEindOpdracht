@@ -9,7 +9,7 @@ package eindproject;
  *
  * @author Brave
  */
-public class MainFinalProject {
+public class Main {
     private static Controller controller;
     
     /**
@@ -17,11 +17,11 @@ public class MainFinalProject {
      */
     public static void main(String[] args) {
         
-        Model displaymodel = new Model();
+        Model model = new Model();
         AddMovieDisplay addMovieDisplay = new AddMovieDisplay();
         ListMovieDisplay listMovieDisplay = new ListMovieDisplay();
         GraphMovieDisplay graphMovieDisplay = new GraphMovieDisplay();
         
-        controller = new Controller(displaymodel, addMovieDisplay, listMovieDisplay, graphMovieDisplay);
+        controller = new Controller(model, addMovieDisplay, listMovieDisplay, graphMovieDisplay);
     }
 }
