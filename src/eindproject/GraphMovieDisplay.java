@@ -118,4 +118,9 @@ public class GraphMovieDisplay extends Display {
     public void setToString(String result) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    @Override
+    public void Update(Controller controller) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
