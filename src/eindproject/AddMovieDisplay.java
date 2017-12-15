@@ -228,4 +228,9 @@ public class AddMovieDisplay extends Display {
     private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
 
+    @Override
+    public void setToString(String result) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

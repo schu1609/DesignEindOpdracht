@@ -5,7 +5,6 @@
  */
 package eindproject;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import java.awt.event.ActionEvent;
@@ -13,8 +12,6 @@ import java.util.Observable;
 import javax.swing.AbstractAction;
 
 import java.util.Observer;
-import javax.swing.JList;
-import javax.swing.ListModel;
 /**
  *
  * @author Brave
@@ -22,20 +19,29 @@ import javax.swing.ListModel;
 
 class Controller implements Observer {
     private DisplayModel displayModel;
-    private Display display;
+    private Display display1;
+    private Display display2;
+    private Display display3;
     
     private List <MovieData> movies;
    
-    public Controller(DisplayModel displayModel, Display displayView) {
+    public Controller(DisplayModel displayModel, Display displayView1, Display displayView2, Display displayView3) {
         this.displayModel = displayModel;
-        this.display = displayView;        
-        this.display.GetData();
+        this.display1 = displayView1;        
+        this.display1.GetData();
+        this.display2 = displayView2;        
+        this.display2.GetData();
+        this.display3 = displayView3;        
+        this.display3.GetData();
         
         this.displayModel.addObserver(this);
         
-        displayView.setAddAction(new AddAction());
-        
-        displayView.setVisible(true);
+        displayView1.setAddAction(new AddAction());
+        displayView2.setAddAction(new AddAction());
+        displayView3.setAddAction(new AddAction());
+        displayView1.setVisible(true);
+        displayView2.setVisible(true);
+        displayView3.setVisible(true);
     }
     
     public void addStartMovie(){
@@ -53,15 +59,16 @@ class Controller implements Observer {
         return movies;
     }
     
-//FIND USE FOR THIS.
     @Override
     public void update(Observable o, Object arg) {
-        display.setToString(displayModel.getToString());
+        display1.setToString(displayModel.getToString());
+        display2.setToString(displayModel.getToString());
+        display3.setToString(displayModel.getToString());
+        
     }
     
     public void AddToList(MovieData f){
         movies.add(f);
-        JList movieList = new JList();
         //Hier komt de lijst van de display
         //movieList.add(displayModel);
     }
@@ -71,10 +78,10 @@ class Controller implements Observer {
         @Override
         public void actionPerformed(ActionEvent e) {
             try{
-                String OriginMovie = display.getOriginMovie();
-                String MovieName = display.getMovieName();
-                int YearMovie = display.getYearMovie();
-                int BudgetMovie = display.getBudgetMovie();
+                String OriginMovie = display1.getOriginMovie();
+                String MovieName = display1.getMovieName();
+                int YearMovie = display1.getYearMovie();
+                int BudgetMovie = display1.getBudgetMovie();
             
                 
                 MovieData myNewMovie = new MovieData(MovieName,OriginMovie,BudgetMovie,Integer.toString(YearMovie));

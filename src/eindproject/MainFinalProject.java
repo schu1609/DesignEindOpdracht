@@ -24,8 +24,6 @@ public class MainFinalProject {
         Display display3 = new GraphMovieDisplay();
         //CalcView calcView = new CalcButtonsView();
         
-        controller = new Controller(displayModel, display1);
-        controller = new Controller(displayModel, display2);
-        controller = new Controller(displayModel, display3);
+        controller = new Controller(displayModel, display1, display2, display3);
     }
 }

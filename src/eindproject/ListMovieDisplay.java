@@ -6,6 +6,7 @@
 package eindproject;
 
 import javax.swing.AbstractAction;
+import javax.swing.JList;
 
 /**
  *
@@ -18,7 +19,7 @@ public class ListMovieDisplay extends Display {
     public ListMovieDisplay() {
         initComponents();
     }
-
+    private Controller controller;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -105,7 +106,7 @@ public class ListMovieDisplay extends Display {
 
     @Override
     public void GetData() {
-        
+       //jList1 = new JList(controller.getData().toArray());
     }
 
     @Override
