@@ -9,10 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Observable;
 
-public class DisplayModel extends Observable {
+public class Model extends Observable {
     private List<MovieData> movies;
     
-    public DisplayModel() {
+    public Model() {
         movies = new ArrayList<>();
     }
     

@@ -17,7 +17,7 @@ public class MainFinalProject {
      */
     public static void main(String[] args) {
         
-        DisplayModel displaymodel = new DisplayModel();
+        Model displaymodel = new Model();
         AddMovieDisplay addMovieDisplay = new AddMovieDisplay();
         ListMovieDisplay listMovieDisplay = new ListMovieDisplay();
         GraphMovieDisplay graphMovieDisplay = new GraphMovieDisplay();

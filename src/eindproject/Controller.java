@@ -18,12 +18,12 @@ import java.util.Observer;
  */
 
 class Controller implements Observer {
-    private DisplayModel displayModel;
+    private Model displayModel;
     private AddMovieDisplay addMovieDisplay;
     private ListMovieDisplay listMovieDisplay;
     private GraphMovieDisplay graphMovieDisplay;
    
-    public Controller(DisplayModel displayModel, AddMovieDisplay addMovieDisplay, ListMovieDisplay listMovieDisplay, GraphMovieDisplay graphMovieDisplay) {
+    public Controller(Model displayModel, AddMovieDisplay addMovieDisplay, ListMovieDisplay listMovieDisplay, GraphMovieDisplay graphMovieDisplay) {
         this.displayModel = displayModel;
         this.listMovieDisplay = listMovieDisplay;        
         this.addMovieDisplay = addMovieDisplay;
