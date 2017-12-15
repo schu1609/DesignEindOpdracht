@@ -6,11 +6,11 @@
 package eindproject;
 
 import javax.swing.AbstractAction;
-
-/**
- *
- * @author Brave
- */
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartFrame;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.PiePlot3D;
+import org.jfree.data.general.DefaultPieDataset;
 public class GraphMovieDisplay extends Display {
 
     /**
@@ -18,8 +18,23 @@ public class GraphMovieDisplay extends Display {
      */
     public GraphMovieDisplay() {
         initComponents();
+        graphMaking();
     }
+    public void graphMaking()
+    {
+        DefaultPieDataset pieDataset = new DefaultPieDataset();
+        pieDataset.setValue("one", 10);
+        pieDataset.setValue("two", 20);
+        pieDataset.setValue("three", 30);
+        JFreeChart chart = ChartFactory.createPieChart3D("origin movies", pieDataset, true ,true, true);
+        //PiePlot3D p = (PiePlot3D)chart.getPlot();
+        //p.setForgroundAlpha(TOP_ALIGMENT);
+        ChartFrame frame = new ChartFrame("origin movies",chart);
+        frame.setVisible(true);
+        frame.setSize(500,500);
 
+        //this.add(frame); er gaat wat fout met dit.
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
