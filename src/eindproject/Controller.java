@@ -13,6 +13,8 @@ import java.util.Observable;
 import javax.swing.AbstractAction;
 
 import java.util.Observer;
+import javax.swing.JList;
+import javax.swing.ListModel;
 /**
  *
  * @author Brave
@@ -57,16 +59,42 @@ class Controller implements Observer {
         display.setToString(displayModel.getToString());
     }
     
+    public void AddToList(MovieData f){
+        movies.add(f);
+        JList movieList = new JList();
+        //Hier komt de lijst van de display
+        //movieList.add(displayModel);
+    }
+    
     class AddAction extends AbstractAction {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            String OriginMovie = display.getOriginMovie();
-            String MovieName = display.getMovieName();
-            int YearMovie = display.getYearMovie();
-            int BudgetMovie = display.getBudgetMovie();
+            try{
+                String OriginMovie = display.getOriginMovie();
+                String MovieName = display.getMovieName();
+                int YearMovie = display.getYearMovie();
+                int BudgetMovie = display.getBudgetMovie();
             
-            displayModel.addMovie(new MovieData(MovieName,OriginMovie,BudgetMovie,Integer.toString(YearMovie)));
+                
+                MovieData myNewMovie = new MovieData(MovieName,OriginMovie,BudgetMovie,Integer.toString(YearMovie));
+                
+                int index = displayModel.getNameList().size();
+                
+                if(index == -1){
+                    index = 0;
+                } else{
+                    index++;
+                }
+                
+                //Hieronder voeg je hem toekomstig toe aan de lijst met de index die hierboven bepaald wordt.
+                //displayModel.listModel.insertElementAt(myNewMovie, index);
+                
+            }
+            catch(Exception ex){
+                System.out.println("Error, one of the input values was incorrect");
+            }
+            
         }
         
     }
