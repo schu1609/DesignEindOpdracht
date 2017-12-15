@@ -31,7 +31,8 @@ public class GraphMovieDisplay extends Display {
         //p.setForgroundAlpha(TOP_ALIGMENT);
         ChartFrame frame = new ChartFrame("origin movies",chart);
         frame.setVisible(true);
-        frame.setSize(500,500);
+        frame.setSize(580,380);
+        frame.setLocation(50, 600);
 
         //this.add(frame); er gaat wat fout met dit.
     }
