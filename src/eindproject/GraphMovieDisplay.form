@@ -2,7 +2,7 @@
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
-    <Component class="org.jfree.chart.plot.PiePlot" name="piePlot1">
+    <Component class="org.jfree.chart.plot.PiePlot3D" name="piePlot3D1">
     </Component>
   </NonVisualComponents>
   <Properties>

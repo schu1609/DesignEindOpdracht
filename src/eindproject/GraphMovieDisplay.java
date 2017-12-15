@@ -44,7 +44,7 @@ public class GraphMovieDisplay extends Display {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        piePlot1 = new org.jfree.chart.plot.PiePlot();
+        piePlot3D1 = new org.jfree.chart.plot.PiePlot3D();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Movie Origin Chart");
@@ -126,7 +126,7 @@ public class GraphMovieDisplay extends Display {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private org.jfree.chart.plot.PiePlot piePlot1;
+    private org.jfree.chart.plot.PiePlot3D piePlot3D1;
     // End of variables declaration//GEN-END:variables
 
     @Override
