@@ -10,47 +10,47 @@ package eindproject;
  * @author Brave
  */
 public class MovieData {
-    String naam;
-    String origin;
-    int budget;
-    String date;
+    String movieName;
+    int movieYear;
+    String movieOrigin;
+    int movieBudget;
     
     //wij hebben hier het Design Pattern Constructor Chaining gebruikt, omdat: voor sommige films die nog uit moeten komen weten mensen niet alle data er over.
-    public MovieData(String naam,String origin,int budget,String date){
-        this.naam = naam;
-        this.origin = origin;
-        this.budget = budget;
-        this.date = date;
+    public MovieData(String movieName,int movieYear ,String movieOrigin ,int movieBudget){
+        this.movieName = movieName;
+        this.movieYear = movieYear;
+        this.movieOrigin = movieOrigin;
+        this.movieBudget = movieBudget;
     }
     
-    public MovieData(String naam,String origin,String date){
-        this.naam = naam;
-        this.origin = origin;      
-        this.date = date;
+    public MovieData(String movieName,int movieYear ,String movieOrigin ){
+        this.movieName = movieName;
+        this.movieYear = movieYear;      
+        this.movieOrigin = movieOrigin;
     }
     
-    public MovieData(String naam,int budget,String date){
-        this.naam = naam;     
-        this.budget = budget;
-        this.date = date;
+    public MovieData(String movieName,int movieYear ,int movieBudget){
+        this.movieName = movieName;     
+        this.movieYear = movieYear;
+        this.movieBudget = movieBudget;
     }
     
-    public MovieData(String naam,String date){
-        this.naam = naam;
-        this.date = date;
+    public MovieData(String movieName,int movieYear ){
+        this.movieName = movieName;
+        this.movieYear = movieYear;
     }
     
     public String getName(){
-        return naam;
+        return movieName;
     }
-    //getName = () -> naam;
+    
+    public int getYear(){
+        return movieYear;
+    }
     public String getOrigin(){
-        return origin;
+        return movieOrigin;
     }
-    public String getBudget(){
-        return Integer.toString(budget);
-    }
-    public String getDate(){
-        return date;
+    public int getBudget(){
+        return movieBudget;
     }
 }

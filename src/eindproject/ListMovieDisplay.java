@@ -5,14 +5,16 @@
  */
 package eindproject;
 
+import java.util.List;
 import javax.swing.AbstractAction;
+import javax.swing.DefaultListModel;
 import javax.swing.JList;
 
 /**
  *
  * @author Brave
  */
-public class ListMovieDisplay extends Display {
+public class ListMovieDisplay extends View {
     /**
      * Creates new form ListMovieDisplay
      */
@@ -31,6 +33,7 @@ public class ListMovieDisplay extends Display {
         jButton1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList<>();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Movie List");
@@ -38,11 +41,6 @@ public class ListMovieDisplay extends Display {
         jButton1.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         jButton1.setText("Remove movie");
 
-        jList1.setModel(new javax.swing.AbstractListModel<String>() {
-            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
-            public int getSize() { return strings.length; }
-            public String getElementAt(int i) { return strings[i]; }
-        });
         jScrollPane1.setViewportView(jList1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -50,12 +48,15 @@ public class ListMovieDisplay extends Display {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 333, Short.MAX_VALUE)
-                        .addComponent(jButton1))
-                    .addComponent(jScrollPane1))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 460, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(27, 27, 27)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton1)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -64,7 +65,9 @@ public class ListMovieDisplay extends Display {
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 273, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
-                .addComponent(jButton1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -105,46 +108,36 @@ public class ListMovieDisplay extends Display {
             }
         });
     }
-
-    @Override
-    public void Update(Controller controller) {
-        jList1.setListData(controller.getData().toArray(new String[]{}));
+    
+    public void setRemove(AbstractAction action){
+        jButton1.setAction(action);
+        jButton1.setText("Remove Movie");
     }
     
-    @Override
-    public void GetData() {
-
-    }
-
-    @Override
-    public void setAddAction(AbstractAction action) {
-
+    public void updateList(List<MovieData> movies) {
+        DefaultListModel<String> model = new DefaultListModel<>();
+        if (!movies.isEmpty()) {
+            for (MovieData movie : movies){
+                model.addElement(movie.getName());
+            }
+        }
+        jList1.setModel(model);
     }
     
-    public String getMovieName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public int getYearMovie() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public String getOriginMovie() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public int getBudgetMovie() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String getSelectedMovie(){
+        int index = jList1.getSelectedIndex();
+        String MovieName = jList1.getSelectedValue();
+        if (index == -1) {
+            jLabel1.setText("No Movie");
+            return null;
+        }
+        return MovieName;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JList<String> jList1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
-
-    @Override
-    public void setToString(String result) {
-
-    }
 }

@@ -10,32 +10,39 @@ import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
 import org.jfree.chart.JFreeChart;
 import org.jfree.chart.plot.PiePlot3D;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.data.category.CategoryDataset;
+import org.jfree.data.category.DefaultCategoryDataset;
 import org.jfree.data.general.DefaultPieDataset;
-public class GraphMovieDisplay extends Display {
+public class GraphMovieDisplay extends View {
 
     /**
      * Creates new form GraphMovieDisplay
      */
     public GraphMovieDisplay() {
         initComponents();
-        graphMaking();
+        initUI();
     }
-    public void graphMaking()
-    {
-        DefaultPieDataset pieDataset = new DefaultPieDataset();
-        pieDataset.setValue("one", 10);
-        pieDataset.setValue("two", 20);
-        pieDataset.setValue("three", 30);
-        JFreeChart chart = ChartFactory.createPieChart3D("origin movies", pieDataset, true ,true, true);
-        //PiePlot3D p = (PiePlot3D)chart.getPlot();
-        //p.setForgroundAlpha(TOP_ALIGMENT);
-        ChartFrame frame = new ChartFrame("origin movies",chart);
+    
+    private void initUI() {
+        CategoryDataset Data = createDataSet();
+        
+        JFreeChart chart = ChartFactory.createBarChart("Movie Origin", "", "How many movies", Data, PlotOrientation.VERTICAL, true, true, true);
+        
+        ChartFrame frame = new ChartFrame("test", chart);
         frame.setVisible(true);
-        frame.setSize(580,380);
+        frame.setSize(580, 320);
         frame.setLocation(50, 600);
-
-        //this.add(frame); er gaat wat fout met dit.
     }
+    
+    private CategoryDataset createDataSet() {
+        DefaultCategoryDataset Data = new DefaultCategoryDataset();
+        
+        Data.addValue(10, "How many movies", "Holland");
+        Data.addValue(10, "How many Movies", "England");
+         return Data;
+    }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -99,44 +106,7 @@ public class GraphMovieDisplay extends Display {
         });
     }
 
-    @Override
-    public void GetData() {
-
-    }
-
-    @Override
-    public void setAddAction(AbstractAction action) {
-
-    }
-    
-    @Override
-    public String getOriginMovie() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public String getMovieName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public int getYearMovie() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public int getBudgetMovie() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private org.jfree.chart.plot.PiePlot3D piePlot3D1;
     // End of variables declaration//GEN-END:variables
-
-    @Override
-    public void setToString(String result) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void Update(Controller controller) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 }

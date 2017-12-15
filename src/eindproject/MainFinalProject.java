@@ -17,15 +17,11 @@ public class MainFinalProject {
      */
     public static void main(String[] args) {
         
-        DisplayModel displayModel = new DisplayModel(controller);
-
+        DisplayModel displaymodel = new DisplayModel();
+        AddMovieDisplay addMovieDisplay = new AddMovieDisplay();
+        ListMovieDisplay listMovieDisplay = new ListMovieDisplay();
+        GraphMovieDisplay graphMovieDisplay = new GraphMovieDisplay();
         
-        Display display1 = new AddMovieDisplay();
-        Display display2 = new ListMovieDisplay();
-        Display display3 = new GraphMovieDisplay();
-        
-        //CalcView calcView = new CalcButtonsView();
-        
-        controller = new Controller(displayModel, display1, display2, display3);
+        controller = new Controller(displaymodel, addMovieDisplay, listMovieDisplay, graphMovieDisplay);
     }
 }
