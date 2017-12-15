@@ -118,7 +118,7 @@ public class ListMovieDisplay extends View {
         DefaultListModel<String> model = new DefaultListModel<>();
         if (!movies.isEmpty()) {
             for (MovieData movie : movies){
-                model.addElement(movie.getName() + " " + movie.getYear());
+                model.addElement(movie.getName());
             }
         }
         jList1.setModel(model);

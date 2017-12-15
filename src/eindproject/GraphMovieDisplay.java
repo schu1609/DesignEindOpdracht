@@ -29,7 +29,7 @@ public class GraphMovieDisplay extends View {
         
         JFreeChart chart = ChartFactory.createBarChart("Movie Origin", "", "How many movies", Data, PlotOrientation.VERTICAL, true, true, true);
         
-        ChartFrame frame = new ChartFrame("test", chart);
+        ChartFrame frame = new ChartFrame("test",chart);
         frame.setVisible(true);
         frame.setSize(580, 320);
         frame.setLocation(50, 600);
@@ -53,19 +53,31 @@ public class GraphMovieDisplay extends View {
     private void initComponents() {
 
         piePlot3D1 = new org.jfree.chart.plot.PiePlot3D();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Movie Origin Chart");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 520, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 340, Short.MAX_VALUE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 520, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 340, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         setBounds(1150, 150, 536, 379);
@@ -107,6 +119,7 @@ public class GraphMovieDisplay extends View {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel jPanel1;
     private org.jfree.chart.plot.PiePlot3D piePlot3D1;
     // End of variables declaration//GEN-END:variables
 }
