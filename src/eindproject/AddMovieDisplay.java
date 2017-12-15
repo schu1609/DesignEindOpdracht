@@ -178,10 +178,11 @@ public class AddMovieDisplay extends View {
         });
     }
     
+    @Override
     public String getName() {
         return jTextPane1.getText();
     }
-    
+    @Override
     public int getYear() {
         return Integer.parseInt(jTextPane2.getText());
     }
@@ -192,6 +193,10 @@ public class AddMovieDisplay extends View {
             
     public int getBudget() {
         return Integer.parseInt(jTextPane4.getText());
+    }
+    public MovieData getMovie(){
+        MovieData movie = new MovieData(getName(),getYear(),getOrigin(),getBudget());
+        return movie;
     }
     
     public void setAdd(AbstractAction action) {

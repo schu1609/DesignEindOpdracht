@@ -14,5 +14,6 @@ import javax.swing.AbstractAction;
 
 //Wij hebben hier gebruik gemaakt van het Design pattern Abstractie, omdat: wij hierdoor data kunnen gebruiken in een Jframe.
 public abstract class View extends javax.swing.JFrame {
- 
+    public abstract String getName();
+    public abstract int getYear();
 }

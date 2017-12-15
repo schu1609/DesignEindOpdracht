@@ -50,12 +50,9 @@ class Controller implements Observer {
         @Override
         public void actionPerformed(ActionEvent e){
             String MovieName = addMovieDisplay.getName();
-            int MovieYear = addMovieDisplay.getYear();
-            String MovieOrigin = addMovieDisplay.getOrigin();
-            int MovieBudget = addMovieDisplay.getBudget();
             String Update = MovieName + " Added Movie";
             
-            MovieData movie = new MovieData(MovieName, MovieYear, MovieOrigin, MovieBudget);
+            MovieData movie = addMovieDisplay.getMovie() ;
             model.Add(movie);
             addMovieDisplay.update(Update);
         }
