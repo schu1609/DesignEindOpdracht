@@ -1,416 +1,282 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
-  <Properties>
-    <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="title" type="java.lang.String" value="Add movie"/>
-    <Property name="bounds" type="java.awt.Rectangle" editor="org.netbeans.beaninfo.editors.RectangleEditor">
-      <Rectangle value="[10, 10, 10, 10]"/>
-    </Property>
-  </Properties>
-  <SyntheticProperties>
-    <SyntheticProperty name="formSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,124,0,0,2,24"/>
-    <SyntheticProperty name="formPosition" type="java.awt.Point" value="-84,-19,0,5,115,114,0,14,106,97,118,97,46,97,119,116,46,80,111,105,110,116,-74,-60,-118,114,52,126,-56,38,2,0,2,73,0,1,120,73,0,1,121,120,112,0,0,0,50,0,0,0,-106"/>
-    <SyntheticProperty name="formSizePolicy" type="int" value="0"/>
-    <SyntheticProperty name="generatePosition" type="boolean" value="true"/>
-    <SyntheticProperty name="generateSize" type="boolean" value="true"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
-  </SyntheticProperties>
-  <AuxValues>
-    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
-    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
-    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
-    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
-    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
-    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
-    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
-    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
-    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
-  </AuxValues>
-
-  <Layout>
-    <DimensionLayout dim="0">
-      <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="1" attributes="0">
-                                      <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="110" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jScrollPane1" pref="148" max="32767" attributes="0"/>
-                                  <Component id="jScrollPane2" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jComboBox1" pref="148" max="32767" attributes="0"/>
-                                  <Component id="jScrollPane4" max="32767" attributes="0"/>
-                              </Group>
-                          </Group>
-                      </Group>
-                      <EmptySpace min="113" pref="113" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-          </Group>
-          <Group type="102" alignment="0" attributes="0">
-              <Component id="jLabel6" min="-2" pref="233" max="-2" attributes="0"/>
-              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-          </Group>
-      </Group>
-    </DimensionLayout>
-    <DimensionLayout dim="1">
-      <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane2" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
-                  <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="1" attributes="0">
-                  <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
-                  <Component id="jScrollPane4" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Component id="jLabel6" min="-2" pref="52" max="-2" attributes="0"/>
-              <EmptySpace pref="32" max="32767" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
-          </Group>
-      </Group>
-    </DimensionLayout>
-  </Layout>
-  <SubComponents>
-    <Component class="javax.swing.JLabel" name="jLabel1">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Trebuchet MS" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="De naam van de film:"/>
-        <Property name="toolTipText" type="java.lang.String" value=""/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel3">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Trebuchet MS" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Het jaar waarin de film is gemaakt:"/>
-        <Property name="toolTipText" type="java.lang.String" value=""/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel4">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Trebuchet MS" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Het land van herkomst:"/>
-        <Property name="toolTipText" type="java.lang.String" value=""/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel5">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Trebuchet MS" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Het budget voor de film:"/>
-        <Property name="toolTipText" type="java.lang.String" value=""/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLabel6">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Trebuchet MS" size="14" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="     Warning: Film bestaat al!"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Movie Add!"/>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_SerializeTo" type="java.lang.String" value="AddMovieDisplay_jButton1"/>
-      </AuxValues>
-    </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane1">
-        </Component>
-      </SubComponents>
-    </Container>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane2">
-        </Component>
-      </SubComponents>
-    </Container>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane4">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextPane" name="jTextPane4">
-        </Component>
-      </SubComponents>
-    </Container>
-    <Component class="javax.swing.JComboBox" name="jComboBox1">
-      <Properties>
-        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="205">
-            <StringItem index="0" value="United States of America"/>
-            <StringItem index="1" value="Afghanistan"/>
-            <StringItem index="2" value="Albania"/>
-            <StringItem index="3" value="Algeria"/>
-            <StringItem index="4" value="Andorra"/>
-            <StringItem index="5" value="Angola"/>
-            <StringItem index="6" value="Antigua &amp; Deps"/>
-            <StringItem index="7" value="Argentina"/>
-            <StringItem index="8" value="Armenia"/>
-            <StringItem index="9" value="Australia"/>
-            <StringItem index="10" value="Austria"/>
-            <StringItem index="11" value="Azerbaijan"/>
-            <StringItem index="12" value="Bahamas"/>
-            <StringItem index="13" value="Bahrain"/>
-            <StringItem index="14" value="Bangladesh"/>
-            <StringItem index="15" value="Barbados"/>
-            <StringItem index="16" value="Belarus"/>
-            <StringItem index="17" value="Belgium"/>
-            <StringItem index="18" value="Belize"/>
-            <StringItem index="19" value="Benin"/>
-            <StringItem index="20" value="Bhutan"/>
-            <StringItem index="21" value="Bolivia"/>
-            <StringItem index="22" value="Bosnia Herzegovina"/>
-            <StringItem index="23" value="Botswana"/>
-            <StringItem index="24" value="Brazil"/>
-            <StringItem index="25" value="Brunei"/>
-            <StringItem index="26" value="Bulgaria"/>
-            <StringItem index="27" value="Burkina"/>
-            <StringItem index="28" value="Burma"/>
-            <StringItem index="29" value="Burundi"/>
-            <StringItem index="30" value="Cambodia"/>
-            <StringItem index="31" value="Cameroon"/>
-            <StringItem index="32" value="Canada"/>
-            <StringItem index="33" value="Cape Verde"/>
-            <StringItem index="34" value="Central African Rep"/>
-            <StringItem index="35" value="Chad"/>
-            <StringItem index="36" value="Chile"/>
-            <StringItem index="37" value="People&apos;s Republic of China"/>
-            <StringItem index="38" value="Republic of China"/>
-            <StringItem index="39" value="Colombia"/>
-            <StringItem index="40" value="Comoros"/>
-            <StringItem index="41" value="Democratic Republic of the Congo"/>
-            <StringItem index="42" value="Republic of the Congo"/>
-            <StringItem index="43" value="Costa Rica"/>
-            <StringItem index="44" value="Croatia"/>
-            <StringItem index="45" value="Cuba"/>
-            <StringItem index="46" value="Cyprus"/>
-            <StringItem index="47" value="Czech Republic"/>
-            <StringItem index="48" value="Danzig"/>
-            <StringItem index="49" value="Denmark"/>
-            <StringItem index="50" value="Djibouti"/>
-            <StringItem index="51" value="Dominica"/>
-            <StringItem index="52" value="Dominican Republic"/>
-            <StringItem index="53" value="East Timor"/>
-            <StringItem index="54" value="Ecuador"/>
-            <StringItem index="55" value="Egypt"/>
-            <StringItem index="56" value="El Salvador"/>
-            <StringItem index="57" value="Equatorial Guinea"/>
-            <StringItem index="58" value="Eritrea"/>
-            <StringItem index="59" value="Estonia"/>
-            <StringItem index="60" value="Ethiopia"/>
-            <StringItem index="61" value="Fiji"/>
-            <StringItem index="62" value="Finland"/>
-            <StringItem index="63" value="France"/>
-            <StringItem index="64" value="Gabon"/>
-            <StringItem index="65" value="Gaza Strip"/>
-            <StringItem index="66" value="The Gambia"/>
-            <StringItem index="67" value="Georgia"/>
-            <StringItem index="68" value="Germany"/>
-            <StringItem index="69" value="Ghana"/>
-            <StringItem index="70" value="Greece"/>
-            <StringItem index="71" value="Grenada"/>
-            <StringItem index="72" value="Guatemala"/>
-            <StringItem index="73" value="Guinea"/>
-            <StringItem index="74" value="Guinea-Bissau"/>
-            <StringItem index="75" value="Guyana"/>
-            <StringItem index="76" value="Haiti"/>
-            <StringItem index="77" value="Holy Roman Empire"/>
-            <StringItem index="78" value="Honduras"/>
-            <StringItem index="79" value="Hungary"/>
-            <StringItem index="80" value="Iceland"/>
-            <StringItem index="81" value="India"/>
-            <StringItem index="82" value="Indonesia"/>
-            <StringItem index="83" value="Iran"/>
-            <StringItem index="84" value="Iraq"/>
-            <StringItem index="85" value="Republic of Ireland"/>
-            <StringItem index="86" value="Israel"/>
-            <StringItem index="87" value="Italy"/>
-            <StringItem index="88" value="Ivory Coast"/>
-            <StringItem index="89" value="Jamaica"/>
-            <StringItem index="90" value="Japan"/>
-            <StringItem index="91" value="Jonathanland"/>
-            <StringItem index="92" value="Jordan"/>
-            <StringItem index="93" value="Kazakhstan"/>
-            <StringItem index="94" value="Kenya"/>
-            <StringItem index="95" value="Kiribati"/>
-            <StringItem index="96" value="North Korea"/>
-            <StringItem index="97" value="South Korea"/>
-            <StringItem index="98" value="Kosovo"/>
-            <StringItem index="99" value="Kuwait"/>
-            <StringItem index="100" value="Kyrgyzstan"/>
-            <StringItem index="101" value="Laos"/>
-            <StringItem index="102" value="Latvia"/>
-            <StringItem index="103" value="Lebanon"/>
-            <StringItem index="104" value="Lesotho"/>
-            <StringItem index="105" value="Liberia"/>
-            <StringItem index="106" value="Libya"/>
-            <StringItem index="107" value="Liechtenstein"/>
-            <StringItem index="108" value="Lithuania"/>
-            <StringItem index="109" value="Luxembourg"/>
-            <StringItem index="110" value="Macedonia"/>
-            <StringItem index="111" value="Madagascar"/>
-            <StringItem index="112" value="Malawi"/>
-            <StringItem index="113" value="Malaysia"/>
-            <StringItem index="114" value="Maldives"/>
-            <StringItem index="115" value="Mali"/>
-            <StringItem index="116" value="Malta"/>
-            <StringItem index="117" value="Marshall Islands"/>
-            <StringItem index="118" value="Mauritania"/>
-            <StringItem index="119" value="Mauritius"/>
-            <StringItem index="120" value="Mexico"/>
-            <StringItem index="121" value="Micronesia"/>
-            <StringItem index="122" value="Moldova"/>
-            <StringItem index="123" value="Monaco"/>
-            <StringItem index="124" value="Mongolia"/>
-            <StringItem index="125" value="Montenegro"/>
-            <StringItem index="126" value="Morocco"/>
-            <StringItem index="127" value="Mount Athos"/>
-            <StringItem index="128" value="Mozambique"/>
-            <StringItem index="129" value="Namibia"/>
-            <StringItem index="130" value="Nauru"/>
-            <StringItem index="131" value="Nepal"/>
-            <StringItem index="132" value="Newfoundland"/>
-            <StringItem index="133" value="Netherlands"/>
-            <StringItem index="134" value="New Zealand"/>
-            <StringItem index="135" value="Nicaragua"/>
-            <StringItem index="136" value="Niger"/>
-            <StringItem index="137" value="Nigeria"/>
-            <StringItem index="138" value="Norway"/>
-            <StringItem index="139" value="Oman"/>
-            <StringItem index="140" value="Ottoman Empire"/>
-            <StringItem index="141" value="Pakistan"/>
-            <StringItem index="142" value="Palau"/>
-            <StringItem index="143" value="Panama"/>
-            <StringItem index="144" value="Papua New Guinea"/>
-            <StringItem index="145" value="Paraguay"/>
-            <StringItem index="146" value="Peru"/>
-            <StringItem index="147" value="Philippines"/>
-            <StringItem index="148" value="Poland"/>
-            <StringItem index="149" value="Portugal"/>
-            <StringItem index="150" value="Prussia"/>
-            <StringItem index="151" value="Qatar"/>
-            <StringItem index="152" value="Romania"/>
-            <StringItem index="153" value="Rome"/>
-            <StringItem index="154" value="Russian Federation"/>
-            <StringItem index="155" value="Rwanda"/>
-            <StringItem index="156" value="St Kitts &amp; Nevis"/>
-            <StringItem index="157" value="St Lucia"/>
-            <StringItem index="158" value="Saint Vincent &amp; the"/>
-            <StringItem index="159" value="Grenadines"/>
-            <StringItem index="160" value="Samoa"/>
-            <StringItem index="161" value="San Marino"/>
-            <StringItem index="162" value="Sao Tome &amp; Principe"/>
-            <StringItem index="163" value="Saudi Arabia"/>
-            <StringItem index="164" value="Senegal"/>
-            <StringItem index="165" value="Serbia"/>
-            <StringItem index="166" value="Seychelles"/>
-            <StringItem index="167" value="Sierra Leone"/>
-            <StringItem index="168" value="Singapore"/>
-            <StringItem index="169" value="Slovakia"/>
-            <StringItem index="170" value="Slovenia"/>
-            <StringItem index="171" value="Solomon Islands"/>
-            <StringItem index="172" value="Somalia"/>
-            <StringItem index="173" value="South Africa"/>
-            <StringItem index="174" value="Spain"/>
-            <StringItem index="175" value="Sri Lanka"/>
-            <StringItem index="176" value="Sudan"/>
-            <StringItem index="177" value="Suriname"/>
-            <StringItem index="178" value="Swaziland"/>
-            <StringItem index="179" value="Sweden"/>
-            <StringItem index="180" value="Switzerland"/>
-            <StringItem index="181" value="Syria"/>
-            <StringItem index="182" value="Tajikistan"/>
-            <StringItem index="183" value="Tanzania"/>
-            <StringItem index="184" value="Thailand"/>
-            <StringItem index="185" value="Togo"/>
-            <StringItem index="186" value="Tonga"/>
-            <StringItem index="187" value="Trinidad &amp; Tobago"/>
-            <StringItem index="188" value="Tunisia"/>
-            <StringItem index="189" value="Turkey"/>
-            <StringItem index="190" value="Turkmenistan"/>
-            <StringItem index="191" value="Tuvalu"/>
-            <StringItem index="192" value="Uganda"/>
-            <StringItem index="193" value="Ukraine"/>
-            <StringItem index="194" value="United Arab Emirates"/>
-            <StringItem index="195" value="United Kingdom"/>
-            <StringItem index="196" value="Uruguay"/>
-            <StringItem index="197" value="Uzbekistan"/>
-            <StringItem index="198" value="Vanuatu"/>
-            <StringItem index="199" value="Vatican City"/>
-            <StringItem index="200" value="Venezuela"/>
-            <StringItem index="201" value="Vietnam"/>
-            <StringItem index="202" value="Yemen"/>
-            <StringItem index="203" value="Zambia"/>
-            <StringItem index="204" value="Zimbabwe"/>
-          </StringArray>
-        </Property>
-      </Properties>
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
-      </AuxValues>
-    </Component>
-  </SubComponents>
-</Form>
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="eindproject.AddMovieDisplay">
+  <grid id="27dc6" binding="panel1" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="b043f" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="b7b8f" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="bd8b1" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Het land van herkomst"/>
+        </properties>
+      </component>
+      <component id="ff268" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="De naam van de film"/>
+        </properties>
+      </component>
+      <component id="c45e1" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Het jaar waarin de film is gemaakt"/>
+        </properties>
+      </component>
+      <component id="4c50d" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Afghanistan"/>
+            <item value="Albania"/>
+            <item value="Algeria"/>
+            <item value="Andorra"/>
+            <item value="Angola"/>
+            <item value="Antigua &amp; Deps"/>
+            <item value="Argentina"/>
+            <item value="Armenia"/>
+            <item value="Australia"/>
+            <item value="Austria"/>
+            <item value="Azerbaijan"/>
+            <item value="Bahamas"/>
+            <item value="Bahrain"/>
+            <item value="Bangladesh"/>
+            <item value="Barbados"/>
+            <item value="Belarus"/>
+            <item value="Belgium"/>
+            <item value="Belize"/>
+            <item value="Benin"/>
+            <item value="Bhutan"/>
+            <item value="Bolivia"/>
+            <item value="Bosnia Herzegovina"/>
+            <item value="Botswana"/>
+            <item value="Brazil"/>
+            <item value="Brunei"/>
+            <item value="Bulgaria"/>
+            <item value="Burkina"/>
+            <item value="Burundi"/>
+            <item value="Cambodia"/>
+            <item value="Cameroon"/>
+            <item value="Canada"/>
+            <item value="Cape Verde"/>
+            <item value="Central African Rep"/>
+            <item value="Chad"/>
+            <item value="Chile"/>
+            <item value="China"/>
+            <item value="Colombia"/>
+            <item value="Comoros"/>
+            <item value="Congo"/>
+            <item value="Congo {Democratic Rep}"/>
+            <item value="Costa Rica"/>
+            <item value="Croatia"/>
+            <item value="Cuba"/>
+            <item value="Cyprus"/>
+            <item value="Czech Republic"/>
+            <item value="Denmark"/>
+            <item value="Djibouti"/>
+            <item value="Dominica"/>
+            <item value="Dominican Republic"/>
+            <item value="East Timor"/>
+            <item value="Ecuador"/>
+            <item value="Egypt"/>
+            <item value="El Salvador"/>
+            <item value="Equatorial Guinea"/>
+            <item value="Eritrea"/>
+            <item value="Estonia"/>
+            <item value="Ethiopia"/>
+            <item value="Fiji"/>
+            <item value="Finland"/>
+            <item value="France"/>
+            <item value="Gabon"/>
+            <item value="Gambia"/>
+            <item value="Georgia"/>
+            <item value="Germany"/>
+            <item value="Ghana"/>
+            <item value="Greece"/>
+            <item value="Grenada"/>
+            <item value="Guatemala"/>
+            <item value="Guinea"/>
+            <item value="Guinea-Bissau"/>
+            <item value="Guyana"/>
+            <item value="Haiti"/>
+            <item value="Honduras"/>
+            <item value="Hungary"/>
+            <item value="Iceland"/>
+            <item value="India"/>
+            <item value="Indonesia"/>
+            <item value="Iran"/>
+            <item value="Iraq"/>
+            <item value="Ireland {Republic}"/>
+            <item value="Israel"/>
+            <item value="Italy"/>
+            <item value="Ivory Coast"/>
+            <item value="Jamaica"/>
+            <item value="Japan"/>
+            <item value="Jordan"/>
+            <item value="Kazakhstan"/>
+            <item value="Kenya"/>
+            <item value="Kiribati"/>
+            <item value="Korea North"/>
+            <item value="Korea South"/>
+            <item value="Kosovo"/>
+            <item value="Kuwait"/>
+            <item value="Kyrgyzstan"/>
+            <item value="Laos"/>
+            <item value="Latvia"/>
+            <item value="Lebanon"/>
+            <item value="Lesotho"/>
+            <item value="Liberia"/>
+            <item value="Libya"/>
+            <item value="Liechtenstein"/>
+            <item value="Lithuania"/>
+            <item value="Luxembourg"/>
+            <item value="Macedonia"/>
+            <item value="Madagascar"/>
+            <item value="Malawi"/>
+            <item value="Malaysia"/>
+            <item value="Maldives"/>
+            <item value="Mali"/>
+            <item value="Malta"/>
+            <item value="Marshall Islands"/>
+            <item value="Mauritania"/>
+            <item value="Mauritius"/>
+            <item value="Mexico"/>
+            <item value="Micronesia"/>
+            <item value="Moldova"/>
+            <item value="Monaco"/>
+            <item value="Mongolia"/>
+            <item value="Montenegro"/>
+            <item value="Morocco"/>
+            <item value="Mozambique"/>
+            <item value="Myanmar, {Burma}"/>
+            <item value="Namibia"/>
+            <item value="Nauru"/>
+            <item value="Nepal"/>
+            <item value="Netherlands"/>
+            <item value="New Zealand"/>
+            <item value="Nicaragua"/>
+            <item value="Niger"/>
+            <item value="Nigeria"/>
+            <item value="Norway"/>
+            <item value="Oman"/>
+            <item value="Pakistan"/>
+            <item value="Palau"/>
+            <item value="Panama"/>
+            <item value="Papua New Guinea"/>
+            <item value="Paraguay"/>
+            <item value="Peru"/>
+            <item value="Philippines"/>
+            <item value="Poland"/>
+            <item value="Portugal"/>
+            <item value="Qatar"/>
+            <item value="Romania"/>
+            <item value="Russian Federation"/>
+            <item value="Rwanda"/>
+            <item value="St Kitts &amp; Nevis"/>
+            <item value="St Lucia"/>
+            <item value="Saint Vincent &amp; the Grenadines"/>
+            <item value="Samoa"/>
+            <item value="San Marino"/>
+            <item value="Sao Tome &amp; Principe"/>
+            <item value="Saudi Arabia"/>
+            <item value="Senegal"/>
+            <item value="Serbia"/>
+            <item value="Seychelles"/>
+            <item value="Sierra Leone"/>
+            <item value="Singapore"/>
+            <item value="Slovakia"/>
+            <item value="Slovenia"/>
+            <item value="Solomon Islands"/>
+            <item value="Somalia"/>
+            <item value="South Africa"/>
+            <item value="South Sudan"/>
+            <item value="Spain"/>
+            <item value="Sri Lanka"/>
+            <item value="Sudan"/>
+            <item value="Suriname"/>
+            <item value="Swaziland"/>
+            <item value="Sweden"/>
+            <item value="Switzerland"/>
+            <item value="Syria"/>
+            <item value="Taiwan"/>
+            <item value="Tajikistan"/>
+            <item value="Tanzania"/>
+            <item value="Thailand"/>
+            <item value="Togo"/>
+            <item value="Tonga"/>
+            <item value="Trinidad &amp; Tobago"/>
+            <item value="Tunisia"/>
+            <item value="Turkey"/>
+            <item value="Turkmenistan"/>
+            <item value="Tuvalu"/>
+            <item value="Uganda"/>
+            <item value="Ukraine"/>
+            <item value="United Arab Emirates"/>
+            <item value="United Kingdom"/>
+            <item value="United States"/>
+            <item value="Uruguay"/>
+            <item value="Uzbekistan"/>
+            <item value="Vanuatu"/>
+            <item value="Vatican City"/>
+            <item value="Venezuela"/>
+            <item value="Vietnam"/>
+            <item value="Yemen"/>
+            <item value="Zambia"/>
+            <item value="Zimbabwe"/>
+          </model>
+        </properties>
+      </component>
+      <component id="f74dc" class="javax.swing.JButton" binding="addMovieButton" default-binding="true">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Add movie"/>
+        </properties>
+      </component>
+      <component id="11af5" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="39c30" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Het budget voor de film"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

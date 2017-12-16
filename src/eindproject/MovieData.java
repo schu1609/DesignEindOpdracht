@@ -1,60 +1,56 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package eindproject;
 
 /**
- *
  * @author Brave
  */
 public class MovieData {
-    String movieName;
-    int movieYear;
-    String movieOrigin;
-    int movieBudget;
-    
-    //wij hebben hier het Design Pattern Constructor Chaining gebruikt, omdat: voor sommige films die nog uit moeten komen weten mensen niet alle data er over.
-    public MovieData(String movieName,int movieYear ,String movieOrigin ,int movieBudget){
+    private String movieName;
+    private int movieYear;
+    private String movieOrigin;
+    private int movieBudget;
+
+    // Wij hebben hier het Design Pattern Constructor Chaining gebruikt, omdat: voor sommige films die nog uit moeten komen weten mensen niet alle data er over.
+    public MovieData(String movieName, int movieYear, String movieOrigin, int movieBudget) {
         this.movieName = movieName;
         this.movieYear = movieYear;
         this.movieOrigin = movieOrigin;
         this.movieBudget = movieBudget;
     }
-    
-    public MovieData(String movieName,int movieYear ,String movieOrigin ){
+
+    public MovieData(String movieName, int movieYear, String movieOrigin) {
         this.movieName = movieName;
         this.movieYear = movieYear;
         this.movieBudget = -1;
         this.movieOrigin = movieOrigin;
     }
-    
-    public MovieData(String movieName,int movieYear ,int movieBudget){
-        this.movieName = movieName;     
+
+    public MovieData(String movieName, int movieYear, int movieBudget) {
+        this.movieName = movieName;
         this.movieYear = movieYear;
         this.movieBudget = movieBudget;
         this.movieOrigin = "Unknown";
     }
-    
-    public MovieData(String movieName,int movieYear ){
+
+    public MovieData(String movieName, int movieYear) {
         this.movieName = movieName;
         this.movieYear = movieYear;
         this.movieBudget = -1;
         this.movieOrigin = "Unknown";
     }
-    
-    public String getName(){
+
+    public String getName() {
         return movieName;
     }
-    
-    public int getYear(){
+
+    public int getYear() {
         return movieYear;
     }
-    public String getOrigin(){
+
+    public String getOrigin() {
         return movieOrigin;
     }
-    public int getBudget(){
+
+    public int getBudget() {
         return movieBudget;
     }
 }

@@ -1,37 +1,37 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package eindproject;
 
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Observable;
 
 public class Model extends Observable {
-    private List<MovieData> movies;
-    
-    public Model() {
-        movies = new ArrayList<>();
-    }
-    
-    public void Add(MovieData movie){
+    /*private List<MovieData> movies = new ArrayList<>();*/
+
+    // TEST DATA
+    private List<MovieData> movies = new LinkedList<>(Arrays.asList(
+            new MovieData("Norm Of The North", 2016, "North Pole", 18000000),
+            new MovieData("Lazer Team", 2016, "America", 2400000),
+            new MovieData("Fan4stic", 2015, "America", 155000000),
+            new MovieData("Epic Movie", 2007, "America", 20000000),
+            new MovieData("Léon", 1995, "France", 16000000),
+            new MovieData("Tortilla Heaven", 2007, "Mexico", 10000000),
+            new MovieData("Kameleon", 2003, "Netherlands", 7500000),
+            new MovieData("Sinterklaas en het gouden hoefijzer", 2017, "Netherlands", 96882)
+    ));
+
+    public void add(MovieData movie) {
         movies.add(movie);
         setChanged();
         notifyObservers();
     }
-    
-    public void Remove(String movieName){
-        for (int i = 0; i < movies.size(); i++){
-            if (movies.get(i).getName().equals(movieName)){
-                movies.remove(i);
-            }
-        }
+
+    public void remove(String movieName) {
+        movies.removeIf(m -> m.getName().equals(movieName));
         setChanged();
         notifyObservers();
     }
-    
+
     public List<MovieData> getMovies() {
         return movies;
     }
