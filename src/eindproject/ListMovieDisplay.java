@@ -8,6 +8,9 @@ import java.util.List;
  */
 public class ListMovieDisplay extends View {
     private JList<String> list1;
+    private JList<Integer> list2;
+    private JList<String> list3;
+    private JList<Double> list4;
     private JButton removeButton;
     private JPanel panel1;
 
@@ -32,12 +35,21 @@ public class ListMovieDisplay extends View {
     public void updateUI(Model model) {
         List<MovieData> movies = model.getMovies();
         DefaultListModel<String> listModel = new DefaultListModel<>();
+        DefaultListModel<Integer> listModel2 = new DefaultListModel<>();
+        DefaultListModel<String> listModel3 = new DefaultListModel<>();
+        DefaultListModel<Double> listModel4 = new DefaultListModel<>();
         if (!movies.isEmpty()) {
             for (MovieData movie : movies) {
-                listModel.addElement(movie.getName()+" , "+movie.getYear()+" , "+movie.getOrigin()+" , "+movie.getBudget());
+                listModel.addElement(movie.getName());
+                listModel2.addElement(movie.getYear());
+                listModel3.addElement(movie.getOrigin());
+                listModel4.addElement(movie.getBudget());
             }
         }
         list1.setModel(listModel);
+        list2.setModel(listModel2);
+        list3.setModel(listModel3);
+        list4.setModel(listModel4);
     }
 
     public void setRemove(AbstractAction action) {

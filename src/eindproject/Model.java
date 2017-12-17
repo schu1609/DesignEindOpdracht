@@ -10,12 +10,12 @@ public class Model extends Observable {
 
     // TEST DATA
     private List<MovieData> movies = new LinkedList<>(Arrays.asList(
-            new MovieData("Norm Of The North", 2016, "North Pole", 18000000),
+            new MovieData("Norm Of The North", 2016, "North Pole", 1800000),
             new MovieData("Lazer Team", 2016, "America", 2400000),
-            new MovieData("Fan4stic", 2015, "America", 155000000),
-            new MovieData("Epic Movie", 2007, "America", 20000000),
-            new MovieData("Léon", 1995, "France", 16000000),
-            new MovieData("Tortilla Heaven", 2007, "Mexico", 10000000),
+            new MovieData("Fan4stic", 2015, "America", 1550000),
+            new MovieData("Epic Movie", 2007, "America", 2000000),
+            new MovieData("Léon", 1995, "France", 1600000),
+            new MovieData("Tortilla Heaven", 2007, "Mexico", 1000000),
             new MovieData("Kameleon", 2003, "Netherlands", 7500000),
             new MovieData("Sinterklaas en het gouden hoefijzer", 2017, "Netherlands", 96882)
     ));
