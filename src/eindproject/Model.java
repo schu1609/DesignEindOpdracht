@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Observable;
 
 public class Model extends Observable {
-    /*private List<MovieData> movies = new ArrayList<>();*/
+    /*private List<MovieData> movies = new ArrayList<>(); onze oude lijst*/
 
     // TEST DATA
     private List<MovieData> movies = new LinkedList<>(Arrays.asList(
