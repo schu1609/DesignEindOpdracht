@@ -5,9 +5,7 @@ import java.awt.event.ActionEvent;
 import java.util.Observable;
 import java.util.Observer;
 
-/**
- * @author Brave
- */
+
 class Controller implements Observer {
     private Model model;
     private AddMovieDisplay addMovieDisplay;
@@ -44,9 +42,11 @@ class Controller implements Observer {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            MovieData movie = addMovieDisplay.getMovie();
-            model.add(movie);
-            graphMovieDisplay.updateUI(model);
+            if (addMovieDisplay.getMovie() != null) {
+                MovieData movie = addMovieDisplay.getMovie();
+                model.add(movie);
+                graphMovieDisplay.updateUI(model);
+            }
         }
     }
 

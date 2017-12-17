@@ -1,8 +1,6 @@
 package eindproject;
 
-/**
- * @author Brave
- */
+
 public class Main {
     private static Controller controller;
 

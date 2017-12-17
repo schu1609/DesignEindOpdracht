@@ -3,9 +3,7 @@ package eindproject;
 import javax.swing.*;
 import java.util.List;
 
-/**
- * @author Brave
- */
+
 public class ListMovieDisplay extends View {
     private JList<String> list1;
     private JList<Integer> list2;

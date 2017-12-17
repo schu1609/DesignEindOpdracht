@@ -1,8 +1,6 @@
 package eindproject;
 
-/**
- * @author Brave
- */
+
 public class MovieData {
     private String movieName;
     private int movieYear;

@@ -2,9 +2,7 @@ package eindproject;
 
 import javax.swing.*;
 
-/**
- * @author Brave
- */
+
 public class AddMovieDisplay extends View {
     private JTextField textField1;
     private JTextField textField2;
@@ -12,6 +10,7 @@ public class AddMovieDisplay extends View {
     private JComboBox comboBox1;
     private JButton addMovieButton;
     private JPanel panel1;
+    private JLabel JLabelError;
 
     /**
      * Creates new form AddMovieDisplay
@@ -28,6 +27,7 @@ public class AddMovieDisplay extends View {
         setContentPane(panel1);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocation(0, 500);
+        JLabelError.setVisible(false);
         comboBox1.setSelectedIndex(-1);
     }
 
@@ -48,8 +48,23 @@ public class AddMovieDisplay extends View {
         textField4.setText("");
     }
 
-    public MovieData getMovie() {
-        return new MovieData(getName(), getYear(), getOrigin(), getBudget());
+    public MovieData getMovie()
+    {
+        try {
+            JLabelError.setVisible(false);
+            if (getOrigin() == null && textField4.getText().equals(""))
+                return new MovieData(getName(), getYear());
+            else if (textField4.getText().equals(""))
+                return new MovieData(getName(), getYear(), getOrigin());
+            else if (getOrigin() == null)
+                return new MovieData(getName(), getYear(), getBudget());
+            return new MovieData(getName(), getYear(), getOrigin(), getBudget());
+        }
+        catch (Exception ex)
+        {
+            JLabelError.setVisible(true);
+            return null;
+        }
     }
 
     public String getName() {
