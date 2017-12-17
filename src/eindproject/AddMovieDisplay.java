@@ -28,6 +28,7 @@ public class AddMovieDisplay extends View {
         setContentPane(panel1);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocation(0, 500);
+        comboBox1.setSelectedIndex(-1);
     }
 
     public void setAdd(AbstractAction action) {
@@ -64,6 +65,6 @@ public class AddMovieDisplay extends View {
     }
 
     private double getBudget() {
-        return Integer.parseInt(textField4.getText());
+        return Double.parseDouble(textField4.getText());
     }
 }
