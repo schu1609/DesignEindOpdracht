@@ -63,7 +63,7 @@ public class AddMovieDisplay extends View {
         return (String) comboBox1.getSelectedItem();
     }
 
-    private int getBudget() {
+    private double getBudget() {
         return Integer.parseInt(textField4.getText());
     }
 }

@@ -34,7 +34,7 @@ public class ListMovieDisplay extends View {
         DefaultListModel<String> listModel = new DefaultListModel<>();
         if (!movies.isEmpty()) {
             for (MovieData movie : movies) {
-                listModel.addElement(movie.getName());
+                listModel.addElement(movie.getName()+" , "+movie.getYear()+" , "+movie.getOrigin()+" , "+movie.getBudget());
             }
         }
         list1.setModel(listModel);

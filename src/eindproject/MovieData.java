@@ -7,10 +7,10 @@ public class MovieData {
     private String movieName;
     private int movieYear;
     private String movieOrigin;
-    private int movieBudget;
+    private double movieBudget;
 
     // Wij hebben hier het Design Pattern Constructor Chaining gebruikt, omdat: voor sommige films die nog uit moeten komen weten mensen niet alle data er over.
-    public MovieData(String movieName, int movieYear, String movieOrigin, int movieBudget) {
+    public MovieData(String movieName, int movieYear, String movieOrigin, double movieBudget) {
         this.movieName = movieName;
         this.movieYear = movieYear;
         this.movieOrigin = movieOrigin;
@@ -24,7 +24,7 @@ public class MovieData {
         this.movieOrigin = movieOrigin;
     }
 
-    public MovieData(String movieName, int movieYear, int movieBudget) {
+    public MovieData(String movieName, int movieYear, double movieBudget) {
         this.movieName = movieName;
         this.movieYear = movieYear;
         this.movieBudget = movieBudget;
@@ -50,7 +50,7 @@ public class MovieData {
         return movieOrigin;
     }
 
-    public int getBudget() {
+    public double getBudget() {
         return movieBudget;
     }
 }
