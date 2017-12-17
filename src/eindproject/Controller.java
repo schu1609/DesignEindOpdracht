@@ -6,6 +6,7 @@ import java.util.Observable;
 import java.util.Observer;
 
 
+// hier word het observer pattern gebruikt zodat we de veranderingen kunnen waarnemen en frames updaten.
 class Controller implements Observer {
     private Model model;
     private AddMovieDisplay addMovieDisplay;

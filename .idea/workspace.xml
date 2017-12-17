@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a02946e-b28d-4c2f-978e-1af64463d1e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/eindproject/AddMovieDisplay.form" afterPath="$PROJECT_DIR$/src/eindproject/AddMovieDisplay.form" />
-      <change beforePath="$PROJECT_DIR$/src/eindproject/AddMovieDisplay.java" afterPath="$PROJECT_DIR$/src/eindproject/AddMovieDisplay.java" />
       <change beforePath="$PROJECT_DIR$/src/eindproject/Controller.java" afterPath="$PROJECT_DIR$/src/eindproject/Controller.java" />
-      <change beforePath="$PROJECT_DIR$/src/eindproject/ListMovieDisplay.java" afterPath="$PROJECT_DIR$/src/eindproject/ListMovieDisplay.java" />
       <change beforePath="$PROJECT_DIR$/src/eindproject/Main.java" afterPath="$PROJECT_DIR$/src/eindproject/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/eindproject/MovieData.java" afterPath="$PROJECT_DIR$/src/eindproject/MovieData.java" />
       <change beforePath="$PROJECT_DIR$/src/eindproject/View.java" afterPath="$PROJECT_DIR$/src/eindproject/View.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eindproject/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -36,8 +32,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eindproject/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -66,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddMovieDisplay.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddMovieDisplay.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/eindproject/AddMovieDisplay.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
+            <state relative-caret-position="181">
               <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
               <folding>
                 <element signature="e#1851#1852#0" expanded="true" />
@@ -88,8 +84,8 @@
       <file leaf-file-name="View.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/eindproject/View.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -160,13 +156,13 @@
         <option value="$PROJECT_DIR$/src/eindproject/GraphMovieDisplay.java" />
         <option value="$PROJECT_DIR$/src/eindproject/ListMovieDisplay.form" />
         <option value="$PROJECT_DIR$/src/eindproject/Model.java" />
-        <option value="$PROJECT_DIR$/src/eindproject/View.java" />
         <option value="$PROJECT_DIR$/src/eindproject/MovieData.java" />
         <option value="$PROJECT_DIR$/src/eindproject/ListMovieDisplay.java" />
-        <option value="$PROJECT_DIR$/src/eindproject/Main.java" />
         <option value="$PROJECT_DIR$/src/eindproject/AddMovieDisplay.form" />
         <option value="$PROJECT_DIR$/src/eindproject/AddMovieDisplay.java" />
+        <option value="$PROJECT_DIR$/src/eindproject/Main.java" />
         <option value="$PROJECT_DIR$/src/eindproject/Controller.java" />
+        <option value="$PROJECT_DIR$/src/eindproject/View.java" />
       </list>
     </option>
   </component>
@@ -438,7 +434,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5039000" />
+    <option name="totallyTimeSpent" value="5195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -503,7 +499,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/eindproject/Controller.java</url>
-          <line>45</line>
+          <line>46</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -777,14 +773,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eindproject/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/eindproject/ListMovieDisplay.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -804,31 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/eindproject/AddMovieDisplay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
-          <folding>
-            <element signature="e#1851#1852#0" expanded="true" />
-            <element signature="e#1894#1895#0" expanded="true" />
-            <element signature="e#1923#1924#0" expanded="true" />
-            <element signature="e#1984#1985#0" expanded="true" />
-            <element signature="e#2018#2019#0" expanded="true" />
-            <element signature="e#2077#2078#0" expanded="true" />
-            <element signature="e#2111#2112#0" expanded="true" />
-            <element signature="e#2174#2175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/eindproject/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/eindproject/AddMovieDisplay.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -842,11 +805,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/eindproject/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/eindproject/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="136">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eindproject/View.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/eindproject/AddMovieDisplay.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
+          <folding>
+            <element signature="e#1851#1852#0" expanded="true" />
+            <element signature="e#1894#1895#0" expanded="true" />
+            <element signature="e#1923#1924#0" expanded="true" />
+            <element signature="e#1984#1985#0" expanded="true" />
+            <element signature="e#2018#2019#0" expanded="true" />
+            <element signature="e#2077#2078#0" expanded="true" />
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2174#2175#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
