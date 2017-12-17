@@ -3,6 +3,7 @@ package eindproject;
 /**
  * @author Brave
  */
+// hier is het design patter dependency injection gebruikt.
 public class Main {
     private static Controller controller;
 

@@ -8,6 +8,7 @@ import java.util.Observer;
 /**
  * @author Brave
  */
+// hier word het observer pattern gebruikt zodat we de veranderingen kunnen waarnemen en frames updaten.
 class Controller implements Observer {
     private Model model;
     private AddMovieDisplay addMovieDisplay;
